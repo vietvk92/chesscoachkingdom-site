@@ -1,0 +1,61 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Politique de confidentialité — Chess Coach</title><style>:root{--bg:#f6f3ec;--fg:#1f2a24;--muted:#5b665f;--accent:#1f5c45;--card:#fffdf8;--line:#e3ddcf}
+@media (prefers-color-scheme:dark){:root{--bg:#141815;--fg:#e9ece8;--muted:#a3ada6;--accent:#7cc7a5;--card:#1c211d;--line:#2c332e}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 64px}nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+nav a{padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--fg);text-decoration:none;font-size:14px;background:var(--card)}
+nav a[aria-current]{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+h1{font-size:28px;line-height:1.2;margin:0 0 8px}h2{font-size:20px;margin:32px 0 8px}a{color:var(--accent)}
+code{font-size:14px}li{margin:4px 0}footer{margin-top:48px;color:var(--muted);font-size:14px}</style></head><body><main><nav><a href="../vi/" lang="vi">Tiếng Việt</a><a href="../en/" lang="en">English</a><a href="../es/" lang="es">Español</a><a href="../fr/" aria-current="page" lang="fr">Français</a><a href="../de/" lang="de">Deutsch</a><a href="../pt-BR/" lang="pt-BR">Português (Brasil)</a></nav><h1>Politique de confidentialité — Chess Coach</h1>
+<p><em>Dernière mise à jour : 04/10/2026</em></p>
+<p>Chess Coach est conçue pour être privée par défaut. Cette politique explique précisément ce que l'app fait, et ne fait pas, de vos informations.</p>
+<h2>Résumé</h2>
+<ul>
+<li><strong>Nous ne collectons rien.</strong> Ni données personnelles, ni analyses, ni télémétrie, ni rapports de plantage, ni identifiants publicitaires.</li>
+<li><strong>Tout reste sur votre appareil.</strong> Parties, statistiques, réglages, profils et échanges avec le coach sont stockés localement. Ils ne quittent l'appareil que via les fonctions facultatives d'Apple décrites ci-dessous.</li>
+<li><strong>Pas de compte, pas de publicité, pas de suivi.</strong> L'abonnement facultatif Chess Coach Plus ou l'achat à vie est traité entièrement par Apple. Nous ne voyons jamais vos moyens de paiement, votre compte Apple ni vos achats ; l'app demande seulement à StoreKit d'Apple, sur votre appareil, si Plus est actif.</li>
+<li>Nous n'exploitons aucun serveur.</li>
+</ul>
+<h2>Données stockées sur votre appareil</h2>
+<ul>
+<li>Historique des parties, progression des problèmes, leçons et royaume</li>
+<li>Vos préférences (langue, apparence, jeu de pièces, couleurs de l'échiquier)</li>
+<li>Réponses de la prise en main utilisées pour adapter la difficulté</li>
+<li>Statistiques (classements, séries, badges, journal) et votre signe du zodiaque des échecs</li>
+<li><strong>Profils de joueur</strong> : vous pouvez avoir plusieurs profils sur un appareil, chacun avec sa progression, ses badges et son journal locaux. Ajouter, renommer ou supprimer un profil est protégé par un contrôle parental. Les noms et photos d'avatar facultatives ne quittent jamais l'appareil.</li>
+</ul>
+<p>Vous pouvez tout supprimer à tout moment en supprimant l'app.</p>
+<h2>Traitement sur l'appareil</h2>
+<ul>
+<li>Le moteur d'échecs fonctionne entièrement sur l'appareil.</li>
+<li>Les explications du coach et le chat « Demander à l'habitant » sont générés sur l'appareil, avec le framework Foundation Models d'Apple lorsqu'il est disponible, sinon avec des modèles intégrés. Aucun texte ni aucune position n'est envoyé à un serveur.</li>
+<li><strong>Scan par la caméra</strong> : la caméra n'est utilisée que lorsque vous ouvrez la fonction de scan. Les images sont analysées en mémoire sur l'appareil, jamais envoyées, jamais enregistrées ni ajoutées à votre photothèque, et sont supprimées à la sortie.</li>
+</ul>
+<h2>Widgets, Siri et Raccourcis</h2>
+<ul>
+<li>Les widgets d'écran d'accueil et d'écran verrouillé affichent votre série et votre plan du jour. L'app écrit un petit résumé dans un conteneur <strong>App Group</strong> partagé uniquement entre l'app, son extension de widgets et son App Clip sur votre appareil. Il n'est transmis nulle part.</li>
+<li>Les raccourcis Siri, Raccourcis et Spotlight (ouvrir le problème du jour, reprendre la leçon, jouer contre l'ordinateur) sont gérés sur l'appareil par le framework App Intents d'Apple. L'app ne reçoit aucune donnée vocale ni de recherche.</li>
+</ul>
+<h2>Jeu en ligne facultatif (Game Center)</h2>
+<p>Le jeu en ligne utilise <strong>uniquement Apple Game Center</strong> (au tour par tour et en temps réel). Apple fournit votre identifiant de joueur et votre nom affiché pour créer les parties ; l'app ne conserve aucun compte propre. Seuls les coups et un état minimal transitent par GameKit. L'app n'ajoute ni chat ni champ de texte libre. Toutes les autres fonctions marchent sans connexion, et les restrictions multijoueur de Temps d'écran sont respectées.</p>
+<h2>Jeu à deux facultatif par FaceTime (SharePlay)</h2>
+<p>SharePlay utilise le framework Group Activities d'Apple pendant un appel FaceTime. Les coups et un état minimal de l'échiquier sont échangés entre participants par l'infrastructure d'Apple. Nous n'exploitons aucun serveur, ne recevons rien et l'app n'ajoute aucun chat ; les participants parlent dans l'appel lui-même.</p>
+<h2>Jeu facultatif à deux appareils (réseau local)</h2>
+<p>Deux appareils sur le même réseau Wi-Fi peuvent jouer ensemble via le framework Network d'Apple avec Bonjour (<code>_chesscoach._tcp</code>). Seuls les coups et un état minimal sont échangés sur le réseau local ; rien ne va vers un serveur externe.</p>
+<h2>App Clip</h2>
+<p>L'App Clip joue une leçon d'essai. Il n'a pas de compte, n'utilise pas le réseau de lui-même et ne stocke que sa progression locale sur votre appareil.</p>
+<h2>Notifications</h2>
+<p>Si vous activez les rappels de série, l'app programme des notifications <strong>locales</strong> sur votre appareil (l'autorisation est demandée avant). Il n'y a aucun serveur push.</p>
+<h2>Partage</h2>
+<p>La fonction carte postale génère une image sur l'appareil et n'ouvre la feuille de partage standard d'iOS que lorsque vous touchez partager, derrière un contrôle parental. L'app ne l'envoie jamais.</p>
+<h2>Autorisations</h2>
+<p>| Autorisation | Raison | |---|---| | Caméra | Scan d'échiquier facultatif (analyse sur l'appareil uniquement) | | Réseau local | Uniquement pour le jeu facultatif à deux appareils | | Notifications | Rappels de série locaux facultatifs |</p>
+<p>L'app ne demande aucune autre autorisation (ni localisation, ni contacts, ni micro, ni suivi).</p>
+<h2>Tiers</h2>
+<p>Aucun SDK tiers d'analyse, de publicité ou de suivi. Les illustrations tierces (jeux de pièces) sont incluses localement sous licences permissives ; voir Réglages → À propos → Licences.</p>
+<h2>Confidentialité des enfants</h2>
+<p>L'app est classée 4+, ne collecte de données personnelles de personne et n'a ni chat ni contenu généré par les utilisateurs. L'Espace parents, la gestion des profils, le partage et les achats sont derrière un contrôle parental.</p>
+<h2>Modifications</h2>
+<p>Si cette politique change, la nouvelle version sera publiée à la même adresse et la date mise à jour.</p>
+<h2>Contact</h2>
+<p>Pour toute question, ouvrez une issue sur le dépôt GitHub du projet.</p>
+<p><a href="https://github.com/vietvk92/vietvk92.github.io/issues">https://github.com/vietvk92/vietvk92.github.io/issues</a></p></main></body></html>
