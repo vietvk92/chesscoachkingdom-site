@@ -140,10 +140,13 @@ RES_ALT_VI = {'village-postie': 'Bác đưa thư làng', 'cave-minor': 'Bác th�
 def header(c, page='home'):
     L = c['lang']
     nav = ''.join(f'<a href="{c["home"]}{h}">{t}</a>' for h, t in c['nav']) if page == 'home' else ''
-    alt = c['alt_lang']
+    segs = [('en', '/', 'EN'), ('vi', '/vi/', 'VI')]
+    if L not in ('en', 'vi'):
+        segs.insert(0, (L, '', L.split('-')[0].upper()))
+    sw = ''.join(f'<span class="cur" lang="{l}" aria-current="page">{t}</span>' if l == L else f'<a href="{h}" hreflang="{l}" lang="{l}">{t}</a>' for l, h, t in segs)
     return (f'<header class="top"><div class="wrap bar"><a class="brand" href="{c["home"]}"><img src="/assets/icon-128.webp" width="36" height="36" alt="" decoding="async"><span>Chess Coach Kingdom</span></a>'
             f'<nav class="links" aria-label="Main">{nav}<a href="{c["support"]}">{c["support_l"]}</a></nav>'
-            f'<a class="langsw" href="{alt[1]}" hreflang="{alt[0]}" lang="{alt[0]}">{alt[2]}</a></div></header>')
+            f'<nav class="langsw" aria-label="Language">{sw}</nav></div></header>')
 
 
 def footer(c):

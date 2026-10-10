@@ -26,8 +26,11 @@ p{margin:0 0 1em} .muted{color:var(--muted)}
 .links{display:flex;gap:22px;align-items:center}
 .links a{color:var(--cream);text-decoration:none;font-size:.92rem;font-weight:500;opacity:.9}
 .links a:hover{color:var(--gold2);opacity:1}
-.langsw{color:var(--cream);text-decoration:none;font-size:.88rem;font-weight:500;border:1px solid rgba(248,236,212,.4);border-radius:999px;padding:7px 14px;background:rgba(21,16,27,.35);backdrop-filter:blur(6px)}
-.langsw:hover{border-color:var(--gold2);color:var(--gold2)}
+.langsw{display:inline-flex;border:1px solid rgba(248,236,212,.4);border-radius:999px;padding:3px;background:rgba(21,16,27,.55);backdrop-filter:blur(6px);font-size:.78rem;font-weight:700;letter-spacing:.08em;flex:none}
+.langsw a,.langsw .cur{display:inline-flex;align-items:center;justify-content:center;min-width:40px;min-height:30px;padding:0 10px;border-radius:999px;text-decoration:none}
+.langsw a{color:var(--cream)}
+.langsw a:hover{color:var(--gold2)}
+.langsw .cur{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#2a1a08}
 .doc .top,.nf .top{position:relative;background:var(--night);border-bottom:1px solid var(--line)}
 .nf .top{position:absolute;background:none;border:0}
 
