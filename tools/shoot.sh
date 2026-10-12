@@ -2,7 +2,7 @@
 # usage: shoot_v2.sh name url [mobile|desktop] [height]
 # Mobile uses a 390px iframe harness (headless Chrome cannot go below ~500px windows). Needs `python3 -m http.server 8765` in the site dir and _h.html there.
 C="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-OUT=${SHOTS_OUT:-/Users/viet.vk/Projects/VietVk/Chess/.orchestra/shots/WEB-SITE-V2}
+OUT=${SHOTS_OUT:-/Users/viet.vk/Projects/VietVk/ChessCoach/iOS/.orchestra/shots/WEB-SITE-V2}
 n=$1; u=$2; mode=$3; h=${4:-900}
 if [ "$mode" = mobile ]; then
   "$C" --headless=new --disable-gpu --hide-scrollbars --force-prefers-reduced-motion --virtual-time-budget=9000 --window-size=500,$h --screenshot="$OUT/$n.png" "http://localhost:8765/_h.html?w=390&h=$h&u=$u" >/dev/null 2>&1

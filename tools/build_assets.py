@@ -1,7 +1,7 @@
 import os, glob
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import os as _o
-O=_o.environ.get('CHESS_APP_REPO','/Users/viet.vk/Projects/VietVk/Chess/'); A=O+'.orchestra/'  # source art lives in the app repo (override with CHESS_APP_REPO)
+O=_o.environ.get('CHESS_APP_REPO','/Users/viet.vk/Projects/VietVk/ChessCoach/iOS/'); A=O+'.orchestra/'  # source art lives in the app repo (override with CHESS_APP_REPO)
 S=_o.path.join(_o.path.dirname(_o.path.abspath(__file__)),'..','assets')+'/'
 for d in ('','art','fx','shots','residents','rivals','firefly'): os.makedirs(S+d,exist_ok=True)
 def save(im,path,w=None,q=80,png=False,alpha=False):
